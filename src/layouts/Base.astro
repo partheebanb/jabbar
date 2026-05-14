@@ -39,6 +39,11 @@ const isContact = pathname === '/contact';
         <li><a href="/contact" class={`nav__link${isContact ? ' active' : ''}`}>Contact</a></li>
       </ul>
       <a href="/contact" class="nav__cta">Start a project</a>
+      <button class="nav__hamburger" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
@@ -59,4 +64,20 @@ const isContact = pathname === '/contact';
 
 </body>
 </html>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links  = document.querySelector('.nav__links');
+  toggle?.addEventListener('click', () => {
+    const isOpen = links?.classList.toggle('nav__links--open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  // Close menu when a link is tapped
+  links?.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+      links.classList.remove('nav__links--open');
+      toggle?.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
 
