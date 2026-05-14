@@ -1,0 +1,163 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="DEEL Case Study | Jabbar"
+  description="How Jabbar built the Digital Encyclopedia of Excavations in the Levant for Harvard University."
+>
+
+  <main class="page-top">
+
+    <div class="container">
+
+      <!-- HERO -->
+      <div class="cs-hero">
+        <a href="/work" class="cs-hero__back">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11.5 7H2.5M6.5 3L2.5 7L6.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          All projects
+        </a>
+        <div class="cs-hero__tag">Digital Humanities &amp; Archaeology</div>
+        <h1 class="cs-hero__title">Digital Encyclopedia of Excavations in the Levant</h1>
+        <div class="cs-meta">
+          <div class="cs-meta__item">
+            <div class="cs-meta__label">Institution</div>
+            <img src="/harvard-logo.png" alt="Harvard University" class="cs-meta__logo">
+          </div>
+          <div class="cs-meta__item">
+            <div class="cs-meta__label">Domain</div>
+            <div class="cs-meta__value">Near Eastern Archaeology</div>
+          </div>
+          <div class="cs-meta__item">
+            <div class="cs-meta__label">Type</div>
+            <div class="cs-meta__value">Reference platform &amp; database</div>
+          </div>
+          <div class="cs-meta__item">
+            <div class="cs-meta__label">Live site</div>
+            <div class="cs-meta__value">
+              <a href="https://deelevant.com" target="_blank" rel="noopener" class="arrow-link">
+                deelevant.com
+                <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- HERO IMAGE -->
+    <figure class="cs-img-block cs-img-block--hero">
+      <img src="/deel-hero.png" alt="Digital Encyclopedia of Excavations in the Levant - platform overview">
+    </figure>
+
+    <div class="container">
+      <!-- BODY -->
+      <div class="cs-body">
+
+        <div class="cs-content">
+
+          <section>
+            <div class="cs-section-label">Background</div>
+            <h2 class="cs-section-heading">A century of excavation data, scattered across disciplines</h2>
+            <p>The Levant is one of the most intensively excavated regions in the world. Over more than a century of archaeological fieldwork, thousands of sites have been dug, documented, and published - but never in one place. Records lived in journal articles, field reports, institutional archives, and the memories of individual scholars.</p>
+            <p>Harvard's team recognised that the absence of a unified reference was slowing research, creating duplication of effort, and making it difficult for the next generation of scholars to build a complete picture of the region's archaeological history. They also needed the platform to serve the field's genuinely multilingual reality: English, Arabic, and Hebrew, with proper right-to-left layout for the latter two.</p>
+          </section>
+
+          <section>
+            <div class="cs-section-label">The challenge</div>
+            <h2 class="cs-section-heading">Ambiguous records, three scripts, and citable scholarship</h2>
+            <p>Archaeological data is inherently messy. Site names change across languages and transliteration systems. Excavation dates are disputed. Attribution is complicated. Records are missing. Any data model that assumed clean, structured input would fail immediately - but one too flexible to query would be useless.</p>
+            <p>The multilingual requirement added real complexity. Entries needed to be authored, translated, and published independently per language, with RTL rendering for Arabic and Hebrew. Translators needed to be tracked separately from authors. And every published entry needed to be citable - which meant generating PDFs with persistent DOIs so researchers could reference specific versions of a record even as it was updated.</p>
+            <p>The editorial team also needed a practical workflow. They were domain experts, not developers. The system had to surface the right controls in the right places without requiring technical intervention for routine publishing tasks.</p>
+          </section>
+
+          <section>
+            <div class="cs-section-label">What we built</div>
+            <h2 class="cs-section-heading">A multilingual encyclopaedia built for scholars and the public alike</h2>
+            <p>We designed and built a web platform that catalogues excavation sites across the Levant in English, Arabic, and Hebrew - with proper right-to-left layout for Arabic and Hebrew, and content authored and published independently per language.</p>
+            <p>Each entry cross-references sites with their known aliases and transliterations, links them to a hierarchical period taxonomy, and surfaces up to eleven categories of specialist report - from macrobotanical to numismatic analysis. Every published entry generates a citable PDF with a persistent DOI, versioned on each update so the scholarly citation chain is never broken.</p>
+            <p>Bibliographies are linked directly to Zotero and exportable in BibTeX or RIS format. A geospatial map lets users explore the data geographically, filtering by period and excavating institution. The editorial team publishes and updates entries through an admin interface, without needing developer involvement.</p>
+          </section>
+
+          <figure class="cs-img-block" style="margin-bottom: 3.5rem;">
+            <img src="/deel-map.png" alt="DEEL geospatial site map">
+          </figure>
+          <p class="cs-img-caption" style="margin-top: -3rem; margin-bottom: 3.5rem;">Geospatial map view, filterable by period and excavating institution.</p>
+
+          <section>
+            <div class="cs-section-label">Outcome</div>
+            <h2 class="cs-section-heading">A living, citable reference for Near Eastern archaeology</h2>
+            <p>DEEL launched as the first unified, publicly accessible encyclopaedia of its kind for the region, serving English, Arabic, and Hebrew content from a single platform. Each entry is independently citable via a persistent DOI that versions cleanly as the scholarly record is updated.</p>
+            <p>The data model has proved extensible: new specialist report types and relationship categories have been added since launch without structural changes to the schema. The editorial team publishes and updates entries entirely through the admin interface, without developer involvement.</p>
+          </section>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar__card">
+            <div class="cs-sidebar__heading">Deliverables</div>
+            <div class="cs-list">
+              <div class="cs-list__item">Multilingual encyclopaedia (EN, AR, HE)</div>
+              <div class="cs-list__item">Geospatial site map</div>
+              <div class="cs-list__item">DOI minting &amp; versioning via Zenodo</div>
+              <div class="cs-list__item">PDF generation per entry per language</div>
+              <div class="cs-list__item">Zotero bibliography export (BibTeX, RIS)</div>
+              <div class="cs-list__item">Editorial admin &amp; publishing workflow</div>
+              <div class="cs-list__item">REST API for React SPA</div>
+            </div>
+          </div>
+          <div class="cs-sidebar__card">
+            <div class="cs-sidebar__heading">Technologies</div>
+            <div class="cs-list">
+              <div class="cs-list__item">Django &amp; Django REST Framework</div>
+              <div class="cs-list__item">React</div>
+              <div class="cs-list__item">PostgreSQL</div>
+              <div class="cs-list__item">Celery &amp; Redis</div>
+              <div class="cs-list__item">AWS S3 &amp; CloudFront</div>
+              <div class="cs-list__item">WeasyPrint</div>
+              <div class="cs-list__item">Zenodo API</div>
+              <div class="cs-list__item">Zotero API</div>
+            </div>
+          </div>
+          <div class="cs-sidebar__card">
+            <div class="cs-sidebar__heading">Partners</div>
+            <div class="cs-list">
+              <div class="cs-list__item">Harvard University</div>
+            </div>
+          </div>
+          <a href="https://deelevant.com" target="_blank" rel="noopener" class="btn btn--primary" style="width: 100%; justify-content: center; border-radius: 4px; margin-top: 0.25rem;">
+            Visit deelevant.com
+          </a>
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- NEXT PROJECT -->
+    <div style="border-top: 1px solid var(--border);">
+      <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem;">
+        <div>
+          <div style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem;">Next project</div>
+          <div style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--dark);">Human Stories: Sacrifice Decoded</div>
+        </div>
+        <a href="/hssd" class="arrow-link">
+          Read case study
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7H11.5M7.5 3L11.5 7L7.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="cta-section__heading">Have a similar research problem?</h2>
+        <p class="cta-section__sub">Tell us about your project and we'll let you know if we're a good fit.</p>
+        <a href="/contact" class="btn btn--light">Get in touch</a>
+      </div>
+    </section>
+
+  </main>
+
+</Base>

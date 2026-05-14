@@ -1,0 +1,162 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="About | Jabbar"
+  description="Jabbar is a boutique software consultancy founded by two engineers with experience at Amazon, PPI, and UBC. We build tools for academic and research teams."
+>
+
+  <main class="page-top">
+
+    <!-- PAGE HERO -->
+    <div class="container">
+      <div class="page-hero">
+        <span class="hero__eyebrow">About Us</span>
+        <h1 class="page-hero__heading">Two engineers.<br><em style="font-family: var(--font-serif); font-style: italic; color: var(--navy);">One focus.</em></h1>
+        <p class="page-hero__sub">We started Jabbar because we kept seeing the same problem: research teams with genuinely important work, held back by software that wasn't built for the way they think.</p>
+      </div>
+    </div>
+
+    <!-- STORY SECTION -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;">
+          <div>
+            <span class="section__eyebrow">Our story</span>
+            <h2 class="section__heading" style="margin-bottom: 1.5rem;">Built on academic ground.</h2>
+            <p style="font-size: 1.0625rem; color: var(--muted); line-height: 1.8; margin-bottom: 1.25rem;">
+              We met while working at the University of British Columbia, where we spent time embedded with research teams - watching talented scientists lose weeks to broken workflows, missing tools, and software that generic enterprise vendors couldn't or wouldn't tailor to academic use.
+            </p>
+            <p style="font-size: 1.0625rem; color: var(--muted); line-height: 1.8; margin-bottom: 1.25rem;">
+              Between us we've worked at Amazon, PPI, and directly within university research environments. That combination - industry-grade engineering discipline applied to the specific constraints of academic work - is what makes Jabbar different from a typical agency.
+            </p>
+            <p style="font-size: 1.0625rem; color: var(--muted); line-height: 1.8;">
+              We stay deliberately small. Two engineers, working closely with each client, is how we maintain the quality and focus that boutique research projects demand.
+            </p>
+          </div>
+          <div>
+            <div style="background: var(--surface); border: 1px solid var(--border); padding: 2.5rem; border-radius: 4px;">
+              <span class="section__eyebrow" style="margin-bottom: 1.75rem; display: inline-flex;">What sets us apart</span>
+              <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                  <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--gold); margin-top: 0.55rem; flex-shrink: 0;"></div>
+                  <div>
+                    <div style="font-weight: 600; color: var(--dark); margin-bottom: 0.25rem; font-size: 0.9375rem;">We've worked inside research institutions</div>
+                    <div style="font-size: 0.875rem; color: var(--muted); line-height: 1.65;">We understand ethics review cycles, grant reporting requirements, and the constraints that come with institutional IT - because we've navigated them ourselves.</div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                  <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--gold); margin-top: 0.55rem; flex-shrink: 0;"></div>
+                  <div>
+                    <div style="font-weight: 600; color: var(--dark); margin-bottom: 0.25rem; font-size: 0.9375rem;">Industry-grade engineering</div>
+                    <div style="font-size: 0.875rem; color: var(--muted); line-height: 1.65;">We bring production-level standards - testing, documentation, reproducibility - to software that is too often treated as a research afterthought.</div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                  <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--gold); margin-top: 0.55rem; flex-shrink: 0;"></div>
+                  <div>
+                    <div style="font-weight: 600; color: var(--dark); margin-bottom: 0.25rem; font-size: 0.9375rem;">No hand-offs, no junior devs</div>
+                    <div style="font-size: 0.875rem; color: var(--muted); line-height: 1.65;">You work directly with the two people building your project. No account managers, no surprises in the work.</div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                  <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--gold); margin-top: 0.55rem; flex-shrink: 0;"></div>
+                  <div>
+                    <div style="font-weight: 600; color: var(--dark); margin-bottom: 0.25rem; font-size: 0.9375rem;">We care about the handoff</div>
+                    <div style="font-size: 0.875rem; color: var(--muted); line-height: 1.65;">Research software that only runs while the original developer is around is a liability. We build for longevity and write documentation that survives team turnover.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section section--alt">
+      <div class="container">
+        <span class="section__eyebrow">The team</span>
+        <h2 class="section__heading" style="margin-bottom: 2.5rem;">Meet the founders</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <img src="/navid.png" alt="Navid Samiei" class="team-card__photo">
+            <div>
+              <h3 class="team-card__name">Navid Samiei</h3>
+              <div class="team-card__role">Co-Founder</div>
+              <p class="team-card__bio">Navid has worked on large-scale data systems and consumer-facing platforms at PPI, and collaborated with research teams on computational tooling at UBC. His time embedded in the university gave him a clear-eyed view of the gap between what generic software offers and what researchers actually need.</p>
+              <a href="https://www.linkedin.com/in/navid-samiei-17068b211/" class="team-card__link" target="_blank" rel="noopener">
+                LinkedIn
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="/partheeban.png" alt="Partheeban Bharati" class="team-card__photo">
+            <div>
+              <h3 class="team-card__name">Partheeban Bharati</h3>
+              <div class="team-card__role">Co-Founder</div>
+              <p class="team-card__bio">Partheeban has built production systems at Amazon and worked closely with academic research groups at UBC. His background spans fullstack development and infrastructure, and his time inside the university gave him a genuine appreciation for the workflows and constraints that make research software uniquely challenging.</p>
+              <a href="https://www.linkedin.com/in/partheeban-bharati-9b5022168/" class="team-card__link" target="_blank" rel="noopener">
+                LinkedIn
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section">
+      <div class="container">
+        <span class="section__eyebrow">How we think</span>
+        <h2 class="section__heading" style="margin-bottom: 3rem;">Our values</h2>
+        <div class="values-grid">
+          <div class="value-item">
+            <div style="font-family: var(--font-serif); font-size: 0.75rem; font-weight: 700; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">01</div>
+            <h3 class="value-item__title">Precision over speed</h3>
+            <p class="value-item__body">We take the time to understand the problem before writing a line of code. Misunderstood requirements cost far more to fix than they do to get right the first time.</p>
+          </div>
+          <div class="value-item">
+            <div style="font-family: var(--font-serif); font-size: 0.75rem; font-weight: 700; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">02</div>
+            <h3 class="value-item__title">Respect for domain expertise</h3>
+            <p class="value-item__body">We are engineers, not researchers. We bring technical knowledge; you bring domain knowledge. The best work happens when we treat both as essential.</p>
+          </div>
+          <div class="value-item">
+            <div style="font-family: var(--font-serif); font-size: 0.75rem; font-weight: 700; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">03</div>
+            <h3 class="value-item__title">Longevity as a design constraint</h3>
+            <p class="value-item__body">Software that only works while the original developer is around isn't finished. We write for the next person - the grad student, the post-doc, the IT admin inheriting the project.</p>
+          </div>
+          <div class="value-item">
+            <div style="font-family: var(--font-serif); font-size: 0.75rem; font-weight: 700; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">04</div>
+            <h3 class="value-item__title">Honest scoping</h3>
+            <p class="value-item__body">We'd rather scope a project down to what's achievable and deliver it excellently than overpromise and underdeliver. If something isn't feasible in your timeline or budget, we'll tell you upfront.</p>
+          </div>
+          <div class="value-item">
+            <div style="font-family: var(--font-serif); font-size: 0.75rem; font-weight: 700; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">05</div>
+            <h3 class="value-item__title">Ethics by default</h3>
+            <p class="value-item__body">Academic research involves human participants, sensitive data, and public trust. We take data handling, consent, and privacy seriously - not as compliance checkboxes but as design principles.</p>
+          </div>
+          <div class="value-item">
+            <div style="font-family: var(--font-serif); font-size: 0.75rem; font-weight: 700; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">06</div>
+            <h3 class="value-item__title">Small by choice</h3>
+            <p class="value-item__body">Staying a two-person shop is deliberate. It means every client gets senior-level attention, every decision goes through the people who understand the project, and nothing falls through the cracks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="cta-section__heading">Want to work together?</h2>
+        <p class="cta-section__sub">Tell us about your research and the problem you need to solve.</p>
+        <a href="/contact" class="btn btn--light">Get in touch</a>
+      </div>
+    </section>
+
+  </main>
+
+</Base>

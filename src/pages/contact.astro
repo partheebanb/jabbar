@@ -1,0 +1,127 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Contact | Jabbar"
+  description="Get in touch with Jabbar to discuss your research software project."
+>
+
+  <main class="page-top">
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- LEFT: Info -->
+          <div>
+            <span class="hero__eyebrow" style="margin-bottom: 1.5rem;">Get in touch</span>
+            <p class="contact-tagline">Let's talk about<br>what you're building.</p>
+            <p style="font-size: 1rem; color: var(--muted); line-height: 1.75; margin-bottom: 3rem;">
+              Whether you have a clear spec or just a problem statement, we're happy to have an initial conversation. No commitment required.
+            </p>
+
+            <div class="contact-info__block">
+              <div class="contact-info__heading">Email</div>
+              <div class="contact-info__value">
+                <a href="mailto:hi@jabbardev.com">hi@jabbardev.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info__block">
+              <div class="contact-info__heading">Response time</div>
+              <div class="contact-info__value">We aim to reply within 1 - 2 business days.</div>
+            </div>
+
+            <div class="contact-info__block">
+              <div class="contact-info__heading">Based in</div>
+              <div class="contact-info__value">Vancouver, BC - working with teams globally.</div>
+            </div>
+
+            <div style="margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border);">
+              <div style="font-size: 0.875rem; font-weight: 600; color: var(--text); margin-bottom: 1rem;">Typical project types</div>
+              <div style="display: flex; flex-direction: column; gap: 0.625rem;">
+                <div style="display: flex; gap: 0.75rem; align-items: center; font-size: 0.875rem; color: var(--muted);">
+                  <div style="width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0;"></div>
+                  Research web platforms &amp; portals
+                </div>
+                <div style="display: flex; gap: 0.75rem; align-items: center; font-size: 0.875rem; color: var(--muted);">
+                  <div style="width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0;"></div>
+                  Interactive data visualisation
+                </div>
+                <div style="display: flex; gap: 0.75rem; align-items: center; font-size: 0.875rem; color: var(--muted);">
+                  <div style="width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0;"></div>
+                  Research databases &amp; catalogues
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Form -->
+          <div>
+            <form
+              id="contactForm"
+              style="background: var(--white); border: 1px solid var(--border); border-radius: 4px; padding: 2.5rem;"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name">Name</label>
+                  <input class="form-control" type="text" id="name" name="name" placeholder="Dr. Jane Smith" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email</label>
+                  <input class="form-control" type="email" id="email" name="email" placeholder="jane@university.ca" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="affiliation">Institution / Affiliation</label>
+                <input class="form-control" type="text" id="affiliation" name="affiliation" placeholder="University of British Columbia">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Tell us about the project</label>
+                <textarea class="form-control" id="message" name="message" placeholder="What's the problem you're trying to solve? What does your team currently use? What would success look like?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center; margin-top: 0.5rem; border-radius: 4px; padding: 0.875rem;">
+                Send message
+              </button>
+
+              <p style="font-size: 0.8125rem; color: var(--muted); margin-top: 1rem; text-align: center; line-height: 1.6;">
+                Or email us directly at <a href="mailto:hi@jabbardev.com" style="color: var(--navy);">hi@jabbardev.com</a>
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</Base>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name        = (document.getElementById('name') as HTMLInputElement).value.trim();
+    const email       = (document.getElementById('email') as HTMLInputElement).value.trim();
+    const affiliation = (document.getElementById('affiliation') as HTMLInputElement).value.trim();
+    const message     = (document.getElementById('message') as HTMLTextAreaElement).value.trim();
+
+    const subject = 'Project enquiry from ' + name;
+    const body    = [
+      'Name: ' + name,
+      'Email: ' + email,
+      affiliation ? 'Institution: ' + affiliation : '',
+      '',
+      message,
+    ].filter(Boolean).join('\n');
+
+    window.location.href =
+      'mailto:hi@jabbardev.com'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body='    + encodeURIComponent(body);
+  });
+</script>
