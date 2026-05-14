@@ -24,18 +24,18 @@ import Base from '../layouts/Base.astro';
             <div class="contact-info__block">
               <div class="contact-info__heading">Email</div>
               <div class="contact-info__value">
-                <a href="mailto:hi@jabbardev.com">hi@jabbardev.com</a>
+                <a href="mailto:contact@jabbardev.com">contact@jabbardev.com</a>
               </div>
             </div>
 
             <div class="contact-info__block">
               <div class="contact-info__heading">Response time</div>
-              <div class="contact-info__value">We aim to reply within 1 - 2 business days.</div>
+              <div class="contact-info__value">We aim to reply within one to two business days.</div>
             </div>
 
             <div class="contact-info__block">
               <div class="contact-info__heading">Based in</div>
-              <div class="contact-info__value">Vancouver, BC - working with teams globally.</div>
+              <div class="contact-info__value">Vancouver, BC. We work with teams globally.</div>
             </div>
 
             <div style="margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border);">
@@ -89,7 +89,7 @@ import Base from '../layouts/Base.astro';
               </button>
 
               <p style="font-size: 0.8125rem; color: var(--muted); margin-top: 1rem; text-align: center; line-height: 1.6;">
-                Or email us directly at <a href="mailto:hi@jabbardev.com" style="color: var(--navy);">hi@jabbardev.com</a>
+                Or email us directly at <a href="mailto:contact@jabbardev.com" style="color: var(--navy);">contact@jabbardev.com</a>
               </p>
             </form>
           </div>
@@ -120,7 +120,7 @@ import Base from '../layouts/Base.astro';
     ].filter(Boolean).join('\n');
 
     window.location.href =
-      'mailto:hi@jabbardev.com'
+      'mailto:contact@jabbardev.com'
       + '?subject=' + encodeURIComponent(subject)
       + '&body='    + encodeURIComponent(body);
   });
