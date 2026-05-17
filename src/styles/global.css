@@ -453,6 +453,34 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 }
 .arrow-link:hover { gap: 0.625rem; }
 
+/* ===== CASE STUDY DISCLAIMER ===== */
+.cs-disclaimer {
+  background: #FEF9EC;
+  border-top: 1px solid #EDD98A;
+  border-bottom: 1px solid #EDD98A;
+  padding: 0.875rem 0;
+}
+.cs-disclaimer__inner {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+.cs-disclaimer__label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9A6212;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cs-disclaimer p {
+  font-size: 0.875rem;
+  color: #7A5010;
+  line-height: 1.5;
+  margin: 0;
+}
+
 /* ===== CASE STUDY IMAGES ===== */
 .cs-img-block {
   margin: 0;
