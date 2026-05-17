@@ -621,9 +621,9 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   .hero__actions { flex-direction: column; align-items: stretch; }
   .hero__actions .btn { justify-content: center; }
   .stats__grid { grid-template-columns: 1fr 1fr; }
-  .stat { border-left: 1px solid var(--border); }
+  .stat { padding: 0 0.75rem; border-left: 1px solid var(--border); }
   .stat:nth-child(odd) { border-left: none; padding-left: 0; }
-  .stat__value { font-size: 1.75rem; }
+  .stat__value { font-size: clamp(1rem, 4vw, 1.375rem); }
   .process-list { grid-template-columns: 1fr; }
   .process-item { border-right: none; padding-left: 0 !important; }
   .values-grid { grid-template-columns: 1fr; }
