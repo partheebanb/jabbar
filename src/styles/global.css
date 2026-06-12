@@ -563,32 +563,6 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 .cs-meta__label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.375rem; }
 .cs-meta__value { font-size: 0.9375rem; color: var(--text); }
 .cs-meta__logo { height: 36px; width: auto; max-width: 140px; object-fit: contain; display: block; filter: grayscale(100%); margin-top: 0.25rem; }
-.cs-timeline { min-width: 130px; }
-.cs-timeline__bar { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.375rem; }
-.cs-timeline__year { font-size: 0.8125rem; font-weight: 600; color: var(--dark); white-space: nowrap; }
-.cs-timeline__line {
-  flex: 1;
-  height: 2px;
-  background: var(--gold);
-  border-radius: 1px;
-  position: relative;
-  min-width: 36px;
-}
-.cs-timeline__line::before,
-.cs-timeline__line::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--gold);
-}
-.cs-timeline__line::before { left: 0; }
-.cs-timeline__line::after { right: 0; }
-.cs-timeline__line--open::after { background: var(--bg); border: 2px solid var(--gold); }
-.cs-timeline__duration { font-size: 0.75rem; color: var(--muted); }
 .cs-body { display: grid; grid-template-columns: 1fr 280px; gap: 4rem; align-items: start; padding: 4rem 0; }
 .cs-content section { margin-bottom: 2.5rem; }
 .cs-content section:last-child { margin-bottom: 0; }
