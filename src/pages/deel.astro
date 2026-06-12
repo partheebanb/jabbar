@@ -41,6 +41,17 @@ import Base from '../layouts/Base.astro';
               </a>
             </div>
           </div>
+          <div class="cs-meta__item">
+            <div class="cs-meta__label">Timeline</div>
+            <div class="cs-timeline">
+              <div class="cs-timeline__bar">
+                <span class="cs-timeline__year">2025</span>
+                <span class="cs-timeline__line"></span>
+                <span class="cs-timeline__year">2026</span>
+              </div>
+              <div class="cs-timeline__duration">1 year</div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -51,15 +62,6 @@ import Base from '../layouts/Base.astro';
       <img src="/deel-hero.png" alt="Digital Encyclopedia of Excavations in the Levant - platform overview">
     </figure>
 
-    <div class="cs-disclaimer">
-      <div class="container">
-        <div class="cs-disclaimer__inner">
-          <span class="cs-disclaimer__label">Under construction</span>
-          <p>The written content below was generated with AI as a placeholder. The real case study is being written and will replace this text soon.</p>
-        </div>
-      </div>
-    </div>
-
     <div class="container">
       <!-- BODY -->
       <div class="cs-body">
@@ -68,26 +70,38 @@ import Base from '../layouts/Base.astro';
 
           <section>
             <div class="cs-section-label">Background</div>
-            <h2 class="cs-section-heading">A century of excavation data, scattered across disciplines</h2>
-            <p>The Levant is one of the most intensively excavated regions in the world. Over more than a century of archaeological fieldwork, thousands of sites have been dug, documented, and published - but never in one place. Records lived in journal articles, field reports, institutional archives, and the memories of individual scholars.</p>
-            <p>Harvard's team recognised that the absence of a unified reference was slowing research, creating duplication of effort, and making it difficult for the next generation of scholars to build a complete picture of the region's archaeological history. They also needed the platform to serve the field's genuinely multilingual reality: English, Arabic, and Hebrew, with proper right-to-left layout for the latter two.</p>
+            <h2 class="cs-section-heading">A century of excavations, a century of scattered data</h2>
+            <p>The Levant is one of the most intensively excavated regions in the world. Over more than a century, thousands of sites have been dug and documented. And yet, access to authoritative excavation summaries has remained imbalanced. Print encyclopedias have been published that aim to serve as a unified reference for some of these records, but they are expensive, seldom updated, and usually only available in a single language. </p>
+            <p>Professor Andrew Danielson at Harvard University and Professor Jacob Damm at the College of the Holy Cross recognized that the absence of a centralized, multilingual reference was slowing research and making it difficult for scholars to build a complete picture of the region's rich archaeological history. </p>
           </section>
 
           <section>
             <div class="cs-section-label">The challenge</div>
-            <h2 class="cs-section-heading">Ambiguous records, three scripts, and citable scholarship</h2>
-            <p>Archaeological data is inherently messy. Site names change across languages and transliteration systems. Excavation dates are disputed. Attribution is complicated. Records are missing. Any data model that assumed clean, structured input would fail immediately - but one too flexible to query would be useless.</p>
-            <p>The multilingual requirement added real complexity. Entries needed to be authored, translated, and published independently per language, with RTL rendering for Arabic and Hebrew. Translators needed to be tracked separately from authors. And every published entry needed to be citable - which meant generating PDFs with persistent DOIs so researchers could reference specific versions of a record even as it was updated.</p>
-            <p>The editorial team also needed a practical workflow. They were domain experts, not developers. The system had to surface the right controls in the right places without requiring technical intervention for routine publishing tasks.</p>
+            <h2 class="cs-section-heading">Ambiguous records, three scripts, citable scholarship, and user-friendly workflows</h2>
+            <p>Archaeological data is inherently messy. Site names change across languages and transliteration systems, excavation dates are disputed, attribution is complicated, records can be missing. Data models that assume clean structured input would fail, while ones too flexible to query wouldn’t be of much use.</p>
+            <p>The platform had to be multilingual, which added further complexity since entries needed to be authored, translated, and published independently per language, with right-to-left rendering for Arabic and Hebrew.</p>
+            <p>Every entry also needed to be citable, which meant generating PDFs with persistent DOIs for each version, so researchers could reference specific versions of a record even after they were updated.</p>
+            <p>Finally, the editorial team needed a practical, user-friendly workflow. The system had to surface the right controls in the right places without requiring technical intervention for routine publishing tasks.</p>
           </section>
 
           <section>
             <div class="cs-section-label">What we built</div>
             <h2 class="cs-section-heading">A multilingual encyclopaedia built for scholars and the public alike</h2>
-            <p>We designed and built a web platform that catalogues excavation sites across the Levant in English, Arabic, and Hebrew - with proper right-to-left layout for Arabic and Hebrew, and content authored and published independently per language.</p>
-            <p>Each entry cross-references sites with their known aliases and transliterations, links them to a hierarchical period taxonomy, and surfaces up to eleven categories of specialist report - from macrobotanical to numismatic analysis. Every published entry generates a citable PDF with a persistent DOI, versioned on each update so the scholarly citation chain is never broken.</p>
-            <p>Bibliographies are linked directly to Zotero and exportable in BibTeX or RIS format. A geospatial map lets users explore the data geographically, filtering by period and excavating institution. The editorial team publishes and updates entries through an admin interface, without needing developer involvement.</p>
+            <p>We designed and built a web platform that catalogues excavation sites across the Levant in English, Arabic, and Hebrew, with proper right-to-left layout for Arabic and Hebrew, and content authored and published independently per language.</p>
+            <p>Each entry can have multiple aliases, is linked to a hierarchical period taxonomy, and contains up to eleven categories of specialist report. Entries can be filtered based on these and displayed as a list or on a geospatial map of the region. Every published entry generates a PDF and editors can request a DOI with the click of a button, with the complex process of minting and versioning them automated away by code. Bibliographies are linked directly to Zotero and exportable in BibTex or RIS format.</p>
           </section>
+
+          <blockquote class="cs-quote">
+            <p class="cs-quote__text">"Jabbar Web Development has been an exceptional partner. As genuine collaborators, they brought a remarkable combination of high-level technical expertise, creativity, and the practical know-how to turn a complex idea into a functional and successful reality. More than just technicians and developers, Jabbar brought a creative vision, suggesting thoughtful and innovative improvements that made the final product much stronger than we had envisioned. Their balance of sophisticated back-end development with an intuitive and user-friendly front-end was particularly impressive. Jabbar’s incredible degree of professionalism and collegiality has truly made it a pleasure to work with them."</p>
+            <div class="cs-quote__name">Andrew Danielson, Ph.D.</div>
+            <div class="cs-quote__role">Harvard University</div>
+          </blockquote>
+
+          <blockquote class="cs-quote">
+            <p class="cs-quote__text">"Working with Jabbar Web Development has been an extraordinarily positive experience. The work was less like consultation or contract labor and more like genuine collaboration as we transformed our project from an idea into a reality. In addition to professionalism and technical prowess, they offered creative solutions to both frontend and backend issues, working closely with us as we sought to anticipate the needs of prospective researchers utilizing our platform. But apart from the more straightforward deliverables of the project, the warmth and friendliness of the technicians made each interaction genuinely enjoyable."</p>
+            <div class="cs-quote__name">Jacob C. Damm, Ph.D.</div>
+            <div class="cs-quote__role">College of the Holy Cross</div>
+          </blockquote>
 
           <figure class="cs-img-block" style="margin-bottom: 2.5rem;">
             <img src="/deel-map.png" alt="DEEL geospatial site map">
@@ -96,9 +110,9 @@ import Base from '../layouts/Base.astro';
 
           <section>
             <div class="cs-section-label">Outcome</div>
-            <h2 class="cs-section-heading">A living, citable reference for Near Eastern archaeology</h2>
-            <p>DEEL launched as the first unified, publicly accessible encyclopaedia of its kind for the region, serving English, Arabic, and Hebrew content from a single platform. Each entry is independently citable via a persistent DOI that versions cleanly as the scholarly record is updated.</p>
-            <p>The data model has proved extensible: new specialist report types and relationship categories have been added since launch without structural changes to the schema. The editorial team publishes and updates entries entirely through the admin interface, without developer involvement.</p>
+            <h2 class="cs-section-heading">A living, citable reference for Levantine archaeology</h2>
+            <p>DEEL launched as the first unified, publicly accessible encyclopedia of its kind for the region, serving English, Arabic, and Hebrew content from a single platform. Each entry is independently citable via a persistent DOI that versions cleanly as the scholarly record is updated. The editorial team publishes and updates entries entirely through the admin interface, without developer involvement.</p>
+            <p>The handoff included detailed written documentation for every editorial workflow, technical design documents for future developers and IT staff who might take over the project, and a technical runbook covering deployment, backups, and infrastructure management. </p>
           </section>
 
         </div>
@@ -138,6 +152,13 @@ import Base from '../layouts/Base.astro';
               <div class="cs-list__item">College of the Holy Cross</div>
             </div>
           </div>
+          <!-- <div class="cs-sidebar__card">
+            <div class="cs-sidebar__heading">Cited in</div>
+            <div class="cs-list">
+              <div class="cs-list__item">Digital Humanities 2024 (DH2024), Washington DC</div>
+              <div class="cs-list__item">Journal of Near Eastern Studies (forthcoming)</div>
+            </div>
+          </div> -->
           <a href="https://deelevant.com" target="_blank" rel="noopener" class="btn btn--primary" style="width: 100%; justify-content: center; border-radius: 4px; margin-top: 0.25rem;">
             Visit deelevant.com
           </a>
