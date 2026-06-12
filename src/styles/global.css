@@ -524,7 +524,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 .cs-img-caption { font-size: 0.8125rem; color: var(--muted); margin-top: 0.75rem; line-height: 1.5; }
 
 /* ===== CASE STUDY LAYOUT ===== */
-.cs-hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--border); }
+.cs-hero { padding: 2rem 0 2.5rem; border-bottom: 1px solid var(--border); }
 .cs-hero__back {
   display: flex;
   width: max-content;
@@ -533,7 +533,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   font-size: 0.8125rem;
   font-weight: 500;
   color: var(--muted);
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   transition: color 0.2s ease;
 }
 .cs-hero__back:hover { color: var(--text); }
@@ -609,7 +609,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   .cta-section { padding: 4rem 0; }
   .clients-section { padding: 2.5rem 0; }
   .page-hero { padding: 3rem 0 2.5rem; }
-  .cs-hero { padding: 3rem 0 2.5rem; }
+  .cs-hero { padding: 1.75rem 0 2rem; }
   .cs-body { padding: 3rem 0; }
   .stats__grid { grid-template-columns: repeat(2, 1fr); }
   .stat:nth-child(3) { border-left: none; }
@@ -642,7 +642,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   .cta-section { padding: 3.5rem 0; }
   .clients-section { padding: 2.5rem 0; }
   .page-hero { padding: 2.5rem 0 2rem; }
-  .cs-hero { padding: 2.5rem 0 2rem; }
+  .cs-hero { padding: 1.5rem 0 1.75rem; }
   .cs-body { padding: 2.5rem 0; }
   .hero__actions { flex-direction: column; align-items: stretch; }
   .hero__actions .btn { justify-content: center; }
