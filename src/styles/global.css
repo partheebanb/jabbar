@@ -517,13 +517,10 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   border: 1px solid var(--border);
   border-radius: 4px;
   overflow: hidden;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.cs-img-block img { width: 100%; height: 100%; display: block; object-fit: cover; }
-.cs-img-block--hero { min-height: 480px; border-radius: 0; border-left: none; border-right: none; }
+.cs-img-block img { width: 100%; height: auto; display: block; }
+.cs-img-block--hero { min-height: unset; border-radius: 4px; box-shadow: 0 4px 32px rgba(0,0,0,0.1); margin: 2.5rem 0; }
+.cs-img-block--hero img { height: auto; object-fit: contain; }
 .cs-img-caption { font-size: 0.8125rem; color: var(--muted); margin-top: 0.75rem; line-height: 1.5; }
 
 /* ===== CASE STUDY LAYOUT ===== */
