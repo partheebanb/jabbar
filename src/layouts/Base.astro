@@ -10,7 +10,7 @@ const { title, description } = Astro.props;
 const pathname = Astro.url.pathname;
 
 const isHome    = pathname === '/';
-const isWork    = pathname === '/work' || pathname === '/deel' || pathname === '/hssd';
+const isWork    = pathname === '/work' || pathname === '/deel';
 const isAbout   = pathname === '/about';
 const isContact = pathname === '/contact';
 ---

@@ -410,13 +410,13 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 /* ===== CLIENTS ===== */
 .clients-section { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--surface); padding: 3rem 0; }
 .clients-section__eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2.5rem; display: block; }
-.clients-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5px; background: var(--border); border: 1.5px solid var(--border); }
+.clients-grid { display: grid; grid-template-columns: 1fr; gap: 1.5px; background: var(--border); border: 1.5px solid var(--border); }
 .client-card {
   background: var(--white);
   padding: 2.75rem;
   display: flex;
-  flex-direction: column;
-  gap: 1.75rem;
+  align-items: center;
+  gap: 2.5rem;
 }
 .client-card__logo { height: 52px; width: auto; max-width: 200px; object-fit: contain; display: block; }
 .logo-pair { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
@@ -428,7 +428,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 .client-card__institution { font-size: 0.8125rem; font-weight: 600; color: var(--muted); letter-spacing: 0.02em; }
 .client-card__project { font-family: var(--font-serif); font-size: 1.3125rem; font-weight: 700; color: var(--dark); line-height: 1.25; margin-top: 0.25rem; }
 .client-card__domain { font-size: 0.875rem; color: var(--muted); margin-top: 0.125rem; }
-.client-card__link { margin-top: auto; padding-top: 1.5rem; }
+.client-card__link { flex-shrink: 0; }
 .institution-logo { height: 48px; width: auto; max-width: 180px; object-fit: contain; display: block; filter: grayscale(100%); }
 
 /* ===== PAGE HERO ===== */
@@ -615,6 +615,8 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   .stat:nth-child(3) { border-left: none; }
   .services__grid { grid-template-columns: 1fr; }
   .clients-grid { grid-template-columns: 1fr; }
+  .client-card { flex-direction: column; align-items: flex-start; gap: 1.75rem; }
+  .client-card__link { margin-top: auto; padding-top: 0.5rem; }
   .work-grid { grid-template-columns: 1fr; }
   .case-card--featured { grid-template-columns: 1fr; gap: 2rem; }
   .process-list { grid-template-columns: repeat(2, 1fr); }
